@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Content</title>
+    
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid black;
+        }
+
+        .item{
+            background-color: blue;
+            padding: 0 5px;
+            flex: 1;
+            margin: 5px;
+            text-align: center;
+            color: azure;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">Heyyyy a heyyyyy</div>
+        <div class="item">olá</div>
+        <div class="item">
+            Era uma casa muito engraçada, não tinha teto
+            não tinha nada
+        </div>
+        <div class="item">Três tigres tristes e três pratos de trigo</div>
+        <div class="item">Agulha fura</div>
+        <div class="item">Texto sem noção com tamanho diferente</div>
+        <div class="item">Sim, ok!</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Heyyyy a heyyyyy</div>
+        <div class="item">olá</div>
+        <div class="item">
+            Era uma casa muito engraçada, não tinha teto
+            não tinha nada
+        </div>
+        <div class="item">Três tigres tristes e três pratos de trigo</div>
+        <div class="item">Agulha fura</div>
+        <div class="item">Texto sem noção com tamanho diferente</div>
+        <div class="item">Sim, ok!</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container center flex-start">
+        <div class="item">Heyyyy a heyyyyy</div>
+        <div class="item">olá</div>
+        <div class="item">
+            Era uma casa muito engraçada, não tinha teto
+            não tinha nada
+        </div>
+        <div class="item">Três tigres tristes e três pratos de trigo</div>
+        <div class="item">Agulha fura</div>
+        <div class="item">Texto sem noção com tamanho diferente</div>
+        <div class="item">Sim, ok!</div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container center space-around">
+        <div class="item">Heyyyy a heyyyyy</div>
+        <div class="item">olá</div>
+        <div class="item">
+            Era uma casa muito engraçada, não tinha teto
+            não tinha nada
+        </div>
+        <div class="item">Três tigres tristes e três pratos de trigo</div>
+        <div class="item">Agulha fura</div>
+        <div class="item">Texto sem noção com tamanho diferente</div>
+        <div class="item">Sim, ok!</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container center space-between">
+        <div class="item">Heyyyy a heyyyyy</div>
+        <div class="item">olá</div>
+        <div class="item">
+            Era uma casa muito engraçada, não tinha teto
+            não tinha nada
+        </div>
+        <div class="item">Três tigres tristes e três pratos de trigo</div>
+        <div class="item">Agulha fura</div>
+        <div class="item">Texto sem noção com tamanho diferente</div>
+        <div class="item">Sim, ok!</div>
+    </div>
+</body>
+</html>
